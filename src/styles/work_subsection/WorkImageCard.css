@@ -77,3 +77,19 @@
     transition: transform 0.3s ease-in;
     
 }
+
+@media (max-width:900px){
+  .gen-content {
+  column-width: 35vw;
+}
+
+.gen-img{
+  width: 100%;
+}
+}
+
+@media (max-width:600px){
+    .gen-content {
+  column-width: 50vw;
+}
+}
