@@ -23,9 +23,9 @@ const About = () => {
             my space to showcase art through code and creativity.
           </p>
            <div className="about-social-links">
-        <Link to='https://www.instagram.com/soulartistics'><FaInstagram/></Link>
-        <Link to='https://github.com/Sneha-Nahak'><FaGithub /></Link>
-         <Link to='https://www.linkedin.com/in/sneha-nahak-s3'><FaLinkedin /></Link>
+        <Link to='https://www.instagram.com/soulartistics' target="_blank" rel="noopener noreferrer"><FaInstagram/></Link>
+        <Link to='https://github.com/Sneha-Nahak' target="_blank" rel="noopener noreferrer"><FaGithub /></Link>
+         <Link to='https://www.linkedin.com/in/sneha-nahak-s3' target="_blank" rel="noopener noreferrer"><FaLinkedin /></Link>
         </div>
         </div>
        
