@@ -2,14 +2,15 @@
   display: flex;
   width: 95%;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin: auto;
   align-items: center;
 }
 
 .gen-container > a {
   padding: 0.5rem 0.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -18,7 +19,7 @@
   text-decoration: none;
   color: white;
   position: sticky;
-  top: 20px;
+  top: 3rem;
   z-index: 1;
   font-weight: 600;
   background-color: rgb(18, 18, 18);
