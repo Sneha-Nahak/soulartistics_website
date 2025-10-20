@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 0; 
+  color: white;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#hero .img-1 {
+  width: auto;
+  height: 100vh;
+}
+
+.banner-text {
+  position: absolute;
+  
+  font-weight: 900;
+  color: white;
+}
+
+.hero-subtext {
+  position: absolute;
+  
+  font-weight: 400;
+  right: 3rem;
+  bottom: 2rem;
+  font-size: large;
+  
+}
+
+
+
+@media (max-width: 1800px) {
+  #hero .img-1 {
+    display: none;
+  }
+  #hero .img-2 {
+    display: block;
+    width: auto;
+    height: 100vh;
+  }
+
+  .banner-text {
+    font-size: 15vw;
+    display: block;
+  }
+ 
+   .hero-subtext{
+        right: 0;
+        left: 0;
+        text-align: center;
+        transform: none;
+    }
+  
+}
+@media all and (min-width: 1270px) {
+  #hero .img-1 {
+    display: block;
+  }
+  #hero .img-2 {
+    display: none;
+  }
+  .banner-text {
+    display: none;
+  }
+
+   .hero-subtext{
+        right: 2rem;
+        left: 0;
+        text-align: right;
+        transform: none;
+    }
+}
+

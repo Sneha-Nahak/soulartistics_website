@@ -1,0 +1,152 @@
+/* --- FOOTER CONTAINER --- */
+.footer-container {
+    background-color: #1a1a1a; /* Dark, minimal background */
+    color: #f0f0f0;            /* Light text for contrast */
+    padding: 3rem 2rem 1rem;
+    font-family: 'Lato', sans-serif; /* Using your specified font */
+}
+
+/* --- MAIN CONTENT GRID --- */
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr; /* Layout: Logo | Info | Form */
+    gap: 3rem;
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+/* --- COLUMN 1: LOGO & SOCIAL --- */
+.footer-logo {
+    height: 3rem; /* Adjust height as needed */
+    margin-bottom: 1rem;
+}
+
+.logo-tagline {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+   
+}
+
+.social-links a>*{
+     transform: scale(1);
+    transition: transform 0.2s ease-out;
+}
+
+.social-links a>*:hover {
+    
+   transform: scale(1.2);
+   transition: transform 0.3s ease-in;
+}
+
+/* --- COLUMN 2: ABOUT ME INFO --- */
+.about-me p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+.about-me strong {
+    color: #fff;
+    font-weight: 400; 
+}
+
+/* --- COLUMN 3: CONTACT FORM --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: rgb(255, 255, 104); /* Highlight focus */
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    color: #131313;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #e9e9e9;
+}
+
+.success-message {
+    color: rgb(144, 238, 144);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+/* --- FOOTER BOTTOM --- */
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+
+/* --- RESPONSIVENESS (Mobile/Tablet) --- */
+
+@media (max-width: 900px) {
+    .footer-content {
+        /* Stack columns vertically on smaller screens */
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+    
+    .footer-section {
+        padding: 1rem 0;
+    }
+
+    /* Center the logo/social section for better mobile aesthetics */
+    .logo-social {
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding-bottom: 2rem;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+}
