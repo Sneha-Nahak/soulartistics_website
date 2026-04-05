@@ -31,7 +31,7 @@ const About = () => {
        
         <img src={Sneha_Image} alt="sneha-image" />
       </div>
-      <button className="about-btn"><Link to='https://sneha-nahak.github.io' target="_blank" rel="noopener noreferrer">Visit my Developer Portfolio</Link></button>
+      <button className="about-btn"><Link to='https://portfolio-sneha-nahak.vercel.app' target="_blank" rel="noopener noreferrer">Visit my Developer Portfolio</Link></button>
     </section>
   );
 };
