@@ -3,7 +3,7 @@ import WorkImageCard from '../components/WorkImageCard'
 
 const baseImagePath = '/product_designs/'
 
- let ProductDesignArr = [`${baseImagePath}1.jpg`,
+ let OtherDesignArr = [`${baseImagePath}1.jpg`,
   `${baseImagePath}2.jpg`,
   `${baseImagePath}3.jpg`,
   `${baseImagePath}4.jpg`,
@@ -16,12 +16,12 @@ const baseImagePath = '/product_designs/'
 
 
 
-const ProductDesigns = () => {
+const OtherDesigns = () => {
   return (
     <div>
-      <WorkImageCard imageArr={ProductDesignArr}/>
+      <WorkImageCard imageArr={OtherDesignArr}/>
     </div>
   )
 }
 
-export default ProductDesigns
+export default OtherDesigns

@@ -21,7 +21,7 @@ const MyWork = () => {
         <WorkCard icon={<TbCards />} name="Posters" linkPath="/posters"/>
         <WorkCard icon={<TbCircleLetterTFilled />} name="Typography" linkPath="/typography"/>
         <WorkCard icon={<GiBookCover />} name="Book Covers" linkPath="/book-covers"/>
-        <WorkCard icon={<AiFillProduct />} name="Product Designs" linkPath="/product-designs"/>
+        <WorkCard icon={<AiFillProduct />} name="Other Designs" linkPath="/other-designs"/>
       </div>
     </section>
   );
