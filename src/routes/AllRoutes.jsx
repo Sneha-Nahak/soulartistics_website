@@ -7,7 +7,7 @@ import Logos from '../pages/Logos'
 import Posters from '../pages/Posters'
 import Typography from '../pages/Typography'
 import BookCovers from '../pages/BookCovers'
-import SocialMediaDesign from '../pages/SocialMediaDesign'
+import SocialMediaDesigns from '../pages/SocialMediaDesigns'
 
 const AllRoutes = () => {
   return (
@@ -20,7 +20,7 @@ const AllRoutes = () => {
         <Route path='/posters' element={<Posters/>}/>
         <Route path='/Typography' element={<Typography/>}/>
         <Route path='/book-covers' element={<BookCovers/>}/>
-        <Route path='/social-media-design' element={<SocialMediaDesign/>}/>
+        <Route path='/social-media-designs' element={<SocialMediaDesigns/>}/>
       </Routes>
     </div>
   )
