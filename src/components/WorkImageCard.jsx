@@ -7,7 +7,7 @@ import "../styles/work_subsection/WorkImageCard.css";
 const WorkImageCard = ({ imageArr }) => {
   return (
     <div className="gen-container">
-      <HashLink smooth to="/#mywork">
+      <HashLink smooth to="/#mywork" style={{zIndex:'1000'}}>
         <FaArrowCircleLeft />
         Go Back to My Work
       </HashLink>

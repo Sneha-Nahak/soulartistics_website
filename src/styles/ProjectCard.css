@@ -1,0 +1,196 @@
+.project-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.project-name {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.behance-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
+.behance-link:hover {
+  background-color: white;
+  color: #242424;
+  transform: scale(1.1);
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  padding: 0 1.5rem;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-tag:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 0;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .project-header {
+    padding: 1.2rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .project-name {
+    font-size: 1.1rem;
+  }
+
+  .behance-link {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    padding: 0 1.2rem;
+  }
+
+  .project-skills {
+    gap: 0.5rem;
+    padding: 0 1.2rem 1.2rem 1.2rem;
+  }
+
+  .skill-tag {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .project-image {
+    height: 140px;
+  }
+
+  .project-header {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  .project-name {
+    font-size: 1rem;
+  }
+
+  .behance-link {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    align-self: flex-start;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+    padding: 0 1rem;
+  }
+
+  .project-skills {
+    gap: 0.4rem;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .skill-tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

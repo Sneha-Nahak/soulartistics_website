@@ -8,11 +8,12 @@ import Footer from './components/Footer'
 
 function App() {
 
-
   return (
     <>
      <Navbar/>  
-     <AllRoutes/>
+     <div className="app-content">
+       <AllRoutes/>
+     </div>
      <Footer/>
     </>
   )

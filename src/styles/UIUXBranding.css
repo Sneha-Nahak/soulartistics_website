@@ -1,0 +1,194 @@
+.uiux-branding-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: auto;
+  min-height: 100svh; /* fixes mobile browser chrome jump vs 100vh */
+  min-height: 100vh; /* fallback for older browsers */
+  padding-top: clamp(2rem, 6vw, 4rem);
+  padding-bottom: 2rem;
+  background-color: #242424;
+  box-sizing: border-box;
+}
+
+.category-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.category-description {
+  color: white;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 400;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.projects-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.go-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.go-to-top a {
+  padding: 0.7rem 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(18, 18, 18);
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.go-to-top a:hover,
+.go-to-top a:focus-visible {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in;
+}
+
+.no-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.no-content p {
+  color: white;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .uiux-branding-container {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .projects-container {
+    padding: 0 1rem;
+  }
+
+  .category-description {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  .projects-grid {
+    gap: 1.2rem;
+  }
+
+  .go-to-top {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .uiux-branding-container {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .category-info {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .category-description {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .projects-container {
+    padding: 0 1rem;
+  }
+
+  .projects-grid {
+    gap: 1rem;
+  }
+
+  .no-content p {
+    font-size: 1rem;
+  }
+
+  .go-to-top {
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .go-to-top a {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+  .uiux-branding-container {
+    padding-top: 2.5rem;
+  }
+
+  .category-description {
+    font-size: 0.85rem;
+    padding: 0 0.25rem;
+  }
+
+  .projects-container {
+    padding: 0 0.75rem;
+  }
+
+  .go-to-top a {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
