@@ -1,24 +1,13 @@
 import React from 'react'
-
-import WorkImageCard from '../components/WorkImageCard';
-
-
-const baseImagePath = '/book_covers/'
-
- let BookCoverArr = [`${baseImagePath}1.jpg`,
-  `${baseImagePath}2.jpg`,
-  `${baseImagePath}3.jpg`,
-  `${baseImagePath}4.jpg`,
-  `${baseImagePath}5.jpg`,
-  `${baseImagePath}6.jpg`,
- 
-  ]
-
+import WorkImageCard from '../components/WorkImageCard'
+import { generateFolderImages } from '../utils/cloudinaryHelper'
 
 const BookCovers = () => {
+  const images = generateFolderImages('book_covers', 6)
+
   return (
     <div>
-      <WorkImageCard imageArr={BookCoverArr}/>
+      <WorkImageCard imageArr={images} />
     </div>
   )
 }

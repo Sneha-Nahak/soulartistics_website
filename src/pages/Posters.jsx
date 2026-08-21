@@ -1,23 +1,13 @@
 import React from 'react'
 import WorkImageCard from '../components/WorkImageCard'
-
-const baseImagePath = '/posters/'
-
- let PosterArr = [`${baseImagePath}1.jpg`,
-  `${baseImagePath}2.jpg`,
-  `${baseImagePath}3.jpg`,
-  `${baseImagePath}4.jpg`,
-  `${baseImagePath}5.jpg`,
-
- 
-  ]
-
-
+import { generateFolderImages } from '../utils/cloudinaryHelper'
 
 const Posters = () => {
+  const images = generateFolderImages('posters', 5)
+
   return (
     <div>
-      <WorkImageCard imageArr={PosterArr}/>
+      <WorkImageCard imageArr={images} />
     </div>
   )
 }
