@@ -1,9 +1,9 @@
 import React from 'react'
 import WorkImageCard from '../components/WorkImageCard'
 
-const baseImagePath = '/product_designs/'
+const baseImagePath = '/social_media_design/'
 
- let OtherDesignArr = [`${baseImagePath}1.jpg`,
+ let SocialMediaDesignArr = [`${baseImagePath}1.jpg`,
   `${baseImagePath}2.jpg`,
   `${baseImagePath}3.jpg`,
   `${baseImagePath}4.jpg`,
@@ -16,12 +16,12 @@ const baseImagePath = '/product_designs/'
 
 
 
-const OtherDesigns = () => {
+const SocialMediaDesign = () => {
   return (
     <div>
-      <WorkImageCard imageArr={OtherDesignArr}/>
+      <WorkImageCard imageArr={SocialMediaDesignArr}/>
     </div>
   )
 }
 
-export default OtherDesigns
+export default SocialMediaDesign

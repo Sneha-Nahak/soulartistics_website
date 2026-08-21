@@ -10,7 +10,7 @@ const Hero = () => {
         <img src={banner_2} alt="soulartistics_banner_2" className='img-2' />
        
         <h1 className='banner-text'>Soulartistics</h1>
-        <p className='hero-subtext'>Design that speak to your soul.</p>
+        <p className='hero-subtext'>Design that speaks to your soul.</p>
     </section>
   )
 }
