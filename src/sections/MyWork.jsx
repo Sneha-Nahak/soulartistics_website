@@ -1,25 +1,27 @@
 import React from "react";
 import '../styles/MyWork.css'
-import { getAllPortfolioSections } from '../config/cloudinaryConfig'
+import logo from '../assets/soulartistics-logo-only-B&W.png'
+import { GiCeremonialMask, GiBookCover } from "react-icons/gi";
+import { MdFaceRetouchingNatural, MdDesignServices } from "react-icons/md";
+import { AiFillProduct } from "react-icons/ai";
+import { TbCards } from "react-icons/tb";
+import { TbCircleLetterTFilled } from "react-icons/tb";
+import { BsLayoutWtf } from "react-icons/bs";
 import WorkCard from "../components/WorkCard";
-import { GiCeremonialMask } from "react-icons/gi";
 
 const MyWork = () => {
-  const portfolioSections = getAllPortfolioSections();
-
   return (
-    <section id="mywork" style={{minHeight:'100vh'}}>
+    <section id="mywork" style={{ minHeight: '100vh' }}>
       <p className="mywork-headtext">My Works</p>
       <div className="mywork-hr-line"></div>
       <div className="mywork-content">
-        {portfolioSections.map((section) => (
-          <WorkCard 
-            key={section.id}
-            icon={<GiCeremonialMask/>} 
-            name={section.name} 
-            linkPath={`/${section.id}`}
-          />
-        ))}
+        <WorkCard icon={<GiCeremonialMask />} name="Creatives" linkPath="/creatives" />
+        <WorkCard icon={<MdFaceRetouchingNatural />} name="Editing and Enhancement" linkPath="/editing_and_enhancement" />
+        <WorkCard image={logo} name="Logos" linkPath="/logos" />
+        <WorkCard icon={<TbCards />} name="Posters" linkPath="/posters" />
+        <WorkCard icon={<TbCircleLetterTFilled />} name="Typography" linkPath="/typography" />
+        <WorkCard icon={<GiBookCover />} name="Book Covers" linkPath="/book-covers" />
+        <WorkCard icon={<BsLayoutWtf />} name="Social Media Designs" linkPath="/social-media-designs" />
       </div>
     </section>
   );
