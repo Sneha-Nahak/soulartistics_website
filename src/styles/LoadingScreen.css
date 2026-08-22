@@ -1,0 +1,149 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeOut 0.5s ease-in-out 2.5s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading-logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.logo-text {
+  background: linear-gradient(135deg, #ffffff, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.progress-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffffff, #cccccc);
+  width: 0%;
+  transition: width 0.3s ease-out;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  min-width: 35px;
+  text-align: center;
+}
+
+.loading-message {
+  font-size: 1rem;
+  color: #aaaaaa;
+  letter-spacing: 2px;
+  font-style: italic;
+  text-align: center;
+  animation: typing 2s steps(40, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: #aaaaaa;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .loading-container {
+    gap: 2rem;
+  }
+
+  .loading-logo {
+    font-size: 1.8rem;
+  }
+
+  .progress-container {
+    width: 250px;
+  }
+
+  .loading-message {
+    font-size: 0.85rem;
+  }
+}
